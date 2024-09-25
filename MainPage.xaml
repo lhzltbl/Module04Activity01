@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module04Activity01.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Button Text="Get Location"
+                    Clicked="OnGetLocationClicked" />
+
+            <Label x:Name="LocationLabel"
+                   Text="Location will appear here"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Label x:Name="AddressLabel"
+                   Text="Address will appear here"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand" />
+
+            <Button Text="Capture Photo"
+                    Clicked="OnCapturePhotoClicked" />
+
+            <Image x:Name="CaptureImage"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   Aspect="AspectFill" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
